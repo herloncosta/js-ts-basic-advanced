@@ -1,3 +1,4 @@
+// OBJETOS E PROTOTYPES
 const falar = {
   falar() {
     console.log(`${this.nome} está falando.`);
@@ -29,4 +30,34 @@ function criaPessoa(nome, sobrenome) {
 
 const p1 = criaPessoa("Herlon", "Costa");
 const p2 = criaPessoa("Diego", "Costa");
-console.log(p2.comer());
+p2.comer();
+
+//OBJETO MAP
+const pessoas = [
+  { id: 3, nome: "Herlon" },
+  { id: 2, nome: "Diego" },
+  { id: 1, nome: "Joe" },
+];
+
+const novasPessoasObj = {};
+
+// Problema: a ordem de inserção é alterada para crescente
+for (const pessoa of pessoas) {
+  const { id } = pessoa;
+  novasPessoasObj[id] = { ...pessoa };
+}
+
+console.log(novasPessoasObj);
+
+// Solução
+const novasPessoasMap = new Map(); // 3 => { id: 1, nome: 'Joe' }
+
+for (const { id, nome } of pessoas) {
+  novasPessoasMap.set(id, { id, nome });
+}
+
+console.log(novasPessoasMap);
+
+for (const [key, { id, nome }] of novasPessoasMap) {
+  console.log(key, id, nome);
+}
