@@ -43,3 +43,12 @@ console.log(c1); // velocidade = 0
 c1.velocidade = 99;
 // getter
 console.log(c1.velocidade); // 99
+
+// HERANÇA
+import { DispositivoEletronico } from "./DispositivoEletronico.js";
+
+const d1 = new DispositivoEletronico("Dispositivo 1");
+console.log(d1);
+
+d1.ligar();
+console.log(d1);
