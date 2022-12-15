@@ -1,6 +1,7 @@
-import { Carro } from "./Carro.js";
-import { DispositivoEletronico } from "./DispositivoEletronico.js";
-import { Smartphone } from "./Smartphone.js";
+import { Carro } from "./classes/Carro.js";
+import { DispositivoEletronico } from "./classes/DispositivoEletronico.js";
+import { Smartphone } from "./classes/Smartphone.js";
+import { ControleRemoto } from "./classes/ControleRemoto.js";
 
 // CRIAÇÃO DE CLASSES
 class Pessoa {
@@ -59,3 +60,11 @@ console.log(d1);
 const smartphone = new Smartphone("Motorola", "Vermelho", "E7 Play");
 smartphone.descricao();
 smartphone.desligar();
+
+// métodos de instância e estáticos
+const controle1 = new ControleRemoto("Phillips");
+controle1.aumentarVolume();
+controle1.diminuirVolume(); // 0
+controle1.diminuirVolume(); // 0
+
+ControleRemoto.trocarBateria();
