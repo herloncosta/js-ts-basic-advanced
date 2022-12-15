@@ -1,3 +1,7 @@
+import { Carro } from "./Carro.js";
+import { DispositivoEletronico } from "./DispositivoEletronico.js";
+import { Smartphone } from "./Smartphone.js";
+
 // CRIAÇÃO DE CLASSES
 class Pessoa {
   constructor(nome, sobrenome) {
@@ -22,7 +26,6 @@ const p1 = new Pessoa("Herlon", "Costa");
 console.log(p1);
 
 // GETTERS E SETTERS
-import { Carro } from "./Carro.js";
 
 const c1 = new Carro("Chevette", 220);
 // simulando botão de acelerar pressionado
@@ -45,10 +48,14 @@ c1.velocidade = 99;
 console.log(c1.velocidade); // 99
 
 // HERANÇA
-import { DispositivoEletronico } from "./DispositivoEletronico.js";
 
 const d1 = new DispositivoEletronico("Dispositivo 1");
 console.log(d1);
 
 d1.ligar();
 console.log(d1);
+
+// instância de Smartphone
+const smartphone = new Smartphone("Motorola", "Vermelho", "E7 Play");
+smartphone.descricao();
+smartphone.desligar();
