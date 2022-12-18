@@ -1,0 +1,13 @@
+{
+  "name": "js-assincrono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "methods.js",
+  "type": "module",
+  "scripts": {
+    "test": "node methods"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
