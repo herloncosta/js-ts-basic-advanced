@@ -16,3 +16,18 @@ Promise.all(promises)
 Promise.race(promises)
   .then((response) => console.log(`Race: ${response}`))
   .catch((error) => console.error(error));
+
+// Promise.resolve - Entrega uma promessa já resolvida
+function downloadPage() {
+  const inCache = true;
+
+  if (inCache) {
+    return Promise.resolve("page in cache");
+  } else {
+    return wait("downloading...", 3);
+  }
+}
+
+downloadPage()
+  .then((pageData) => console.log(`Resolve: ${pageData}`))
+  .catch((error) => console.error(error));
