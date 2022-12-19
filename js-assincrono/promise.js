@@ -1,3 +1,8 @@
+// PROMISE STATUS:
+// pending
+// fullfilled
+// rejected
+
 export function rand(min, max) {
   min *= 1000;
   max *= 1000;
