@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":"MAAAA,QAAQC,IAAI,iBAKZD,QAAQC,IAFO,CAAEC,KADJ,U","sources":["webpack://webpack/./src/index.js"],"sourcesContent":["console.log('Hello Webpack');\n\nconst name = \"Herlon\"\nconst person = { name }\n\nconsole.log(person)\n"],"names":["console","log","name"],"sourceRoot":""}
