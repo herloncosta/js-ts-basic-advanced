@@ -1,2 +1,2 @@
-(()=>{console.log("Hello Webpack");console.log({name:"Herlon"})})();
+(()=>{var o={498:o=>{o.exports=function(){var o=arguments.length>0&&void 0!==arguments[0]?arguments[0]:0,r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0;if(!o||!r)throw Error("x e y devem ser passados");return o+r}}},r={};function e(n){var t=r[n];if(void 0!==t)return t.exports;var s=r[n]={exports:{}};return o[n](s,s.exports,e),s.exports}(()=>{var o=e(498);console.log("Hello Webpack");console.log({name:"Herlon"});var r=o(10,10);console.log(r)})()})();
 //# sourceMappingURL=bundle.js.map
