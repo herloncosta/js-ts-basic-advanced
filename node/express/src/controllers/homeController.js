@@ -1,5 +1,6 @@
-const hello = (req, res) => {
+const hello = (req, res, next) => {
 	res.render('index')
+	next()
 }
 
 const registered = (req, res) => {
