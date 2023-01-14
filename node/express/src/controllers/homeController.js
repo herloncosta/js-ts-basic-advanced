@@ -1,5 +1,5 @@
 const hello = (req, res) => {
-	res.send('Hello Express')
+	res.render('index')
 }
 
 const registered = (req, res) => {
