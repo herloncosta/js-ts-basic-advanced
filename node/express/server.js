@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 import express, { urlencoded } from 'express'
 import { resolve } from 'node:path'
-import { connect, set, connection } from 'mongoose'
+import { connect, set } from 'mongoose'
 import { router } from './src/routes.js'
 import { example } from './src/middlewares/exampleMiddieware.js'
 
@@ -28,7 +28,7 @@ app.use(router)
 
 const sessionOptions = session({
 	secret: 'lfjasdfjhaslghs9685f8sd58f875sadfas907',
-	store: new MongoStore({ mongooseConnection: connection }),
+	store: MongoStore.create({ mongoUrl: process.env.CONNECTIONSTRING }),
 	resave: false,
 	saveUninitialized: false,
 	cookie: {
